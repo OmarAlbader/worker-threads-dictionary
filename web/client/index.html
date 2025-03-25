@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dictionary</title>
+  </head>
+  <body>
+    <form onsubmit="handleSubmit(event)">
+      <div class="container">
+        <div class="flex">
+          <input
+            type="text"
+            id="wordInput"
+            placeholder="Enter a word"
+            style="height: 100%"
+          />
+          <div
+            style="
+              border: 1px solid white;
+              border-radius: 5px;
+              height: 10rem;
+              width: 100%;
+              padding: 10px;
+              color: white;
+            "
+            id="dictionary"
+          ></div>
+        </div>
+      </div>
+      <div style="padding: 0 10rem">
+        <button type="submit" style="width: 100%; margin-top: 2rem">
+          Translate
+        </button>
+      </div>
+    </form>
+
+    <script src="client.js"></script>
+  </body>
+</html>
