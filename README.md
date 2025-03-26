@@ -24,14 +24,33 @@ This system uses a Node.js server with worker threads to distribute dictionary l
 
 ```
 .
-├── client/
-│   ├── client.js     # Web client JavaScript
-│   ├── index.html    # Web client HTML interface
-│   └── styles.css    # Web client styling
-├── nodeClient.js     # Command-line client
-├── nodeServer.js     # Multi-threaded server
-├── worker.js         # Worker thread implementation
-└── README.md         # Project documentation
+```
+
+.
+├── dictionary-electron/ # Desktop application
+│ ├── assets/
+│ │ └── icons/ # Application icons
+│ ├── main.js # Electron main process
+│ ├── preload.js # Preload script for security
+│ ├── renderer.js # UI logic
+│ ├── index.html # Application UI
+│ ├── styles.css # Application styling
+│ └── package.json # Electron app configuration
+├── web/
+│ ├── client/
+│ │ ├── client.js # Web client JavaScript
+│ │ ├── index.html # Web client HTML interface
+│ │ └── styles.css # Web client styling
+│ └── server/
+│ ├── server.js # Web Multi-threaded server
+│ └── worker.js # Web Worker thread implementation
+├── nodeClient.js # Command-line client
+├── nodeServer.js # Multi-threaded server
+├── worker.js # Worker thread implementation
+└── README.md # Project documentation
+
+```
+
 ```
 
 ## Installation
@@ -39,29 +58,55 @@ This system uses a Node.js server with worker threads to distribute dictionary l
 1. Clone the repository:
 
 ```bash
-   git clone https://github.com/yourusername/distributed-dictionary.git
-   cd distributed-dictionary
+   git clone https://github.com/OmarAlbader/worker-threads-dictionary.git
+   cd worker-threads-dictionary
 ```
 
 2. No additional installation is needed as the project uses Node.js built-in modules.
 
 ## Running the Application
 
-### Web Version
+### Desktop Version (electron.js)
 
-1. Start the server:
+1. start the server:
 
 ```bash
     node nodeServer.js
 ```
 
-2. Serve the web client:
+2. go to (dictionary-electron -> server) folder
+
+```bash
+    cd dictionary-electron
+```
+
+3. start desktop app:
+
+```bash
+    npm start
+```
+
+### Web Version
+
+1. go to web -> server folder
+
+```bash
+cd web/server
+```
+
+2. Start the server:
+
+```bash
+    node server.js
+```
+
+3. Serve the web client:
 
 - Using VS Code Live Server extension
 - Or any other local development server
 - Open `client/index.html` in your browser
 
-3. Enter a word in the input field and click "Translate" to see its definition.
+4. Enter a word in the input field and click "Translate" to see its definition.
 
 ### Command-line Version
 

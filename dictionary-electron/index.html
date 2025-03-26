@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dictionary Lookup</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Dictionary Lookup</h1>
+      <div id="connection-status" class="status">Connecting to server...</div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="word-input"
+          autofocus
+          placeholder="Enter a word"
+        />
+        <button id="lookup-btn">Lookup</button>
+      </div>
+
+      <div class="results-container">
+        <h2>Definition</h2>
+        <div id="result">Enter a word to see its definition</div>
+      </div>
+    </div>
+
+    <script src="renderer.js"></script>
+  </body>
+</html>

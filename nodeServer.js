@@ -1,5 +1,5 @@
-const net = require("net");
 const { Worker, isMainThread } = require("worker_threads");
+const net = require("net");
 const os = require("os");
 
 if (isMainThread) {

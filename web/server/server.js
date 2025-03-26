@@ -1,5 +1,5 @@
-const http = require("http");
 const { Worker, isMainThread } = require("worker_threads");
+const http = require("http");
 const os = require("os");
 
 if (isMainThread) {
