@@ -74,7 +74,13 @@ This system uses a Node.js server with worker threads to distribute dictionary l
     cd dictionary-electron
 ```
 
-3. start desktop app:
+3. download dependancies:
+
+```bash
+    npm install
+```
+
+4. start desktop app:
 
 ```bash
     npm start
