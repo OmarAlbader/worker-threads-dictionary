@@ -68,7 +68,7 @@ This system uses a Node.js server with worker threads to distribute dictionary l
     node nodeServer.js
 ```
 
-2. go to (dictionary-electron -> server) folder
+2. go to (dictionary-electron) folder
 
 ```bash
     cd dictionary-electron
