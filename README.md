@@ -24,9 +24,6 @@ This system uses a Node.js server with worker threads to distribute dictionary l
 
 ```
 .
-```
-
-.
 ├── dictionary-electron/ # Desktop application
 │ ├── assets/
 │ │ └── icons/ # Application icons
@@ -48,9 +45,6 @@ This system uses a Node.js server with worker threads to distribute dictionary l
 ├── nodeServer.js # Multi-threaded server
 ├── worker.js # Worker thread implementation
 └── README.md # Project documentation
-
-```
-
 ```
 
 ## Installation
